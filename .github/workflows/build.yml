@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Debug APK
         working-directory: muse_android_app
-        run: gradle assembleDebug
+        run: gradle assembleDebug -Pandroid.useAndroidX=true
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
